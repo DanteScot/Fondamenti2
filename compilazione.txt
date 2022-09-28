@@ -1,0 +1,6 @@
+g++ -std=c++11 -o nomeFinale nomeIniziale.cpp
+
+#include <iostream>
+using namespace ::std;
+
+\t crea uno spazio (tab)
