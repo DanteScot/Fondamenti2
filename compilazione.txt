@@ -4,3 +4,7 @@ g++ -std=c++11 -o nomeFinale nomeIniziale.cpp
 using namespace ::std;
 
 \t crea uno spazio (tab)
+
+//passaggio parametro per valore (NON viene modificata la variabile originale) int func(int x)
+//passaggio parametro per riferimento (viene modificata la variabile originale) int func(int &x)
+//passaggio parametro per riferimento costante (impedisce che la variabile venga modificata nella funzione chiamata) int func(const int &x)
