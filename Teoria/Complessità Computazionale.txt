@@ -1,0 +1,54 @@
+Complessità Computazionale
+
+I 3 tipi di complessità:
+    comp. temporale
+    comp. spaziale  //spazio aggiuntivo per risolvere il problema
+    comp. I/O
+
+
+ELEMENTI FONDAMENTALI PER COSTRUIRE UN ALGORITMO:
+
+1) Definire modello di costo:
+    dimensione dell'input:
+        paramentri che determinano il numero da eseguire
+    
+    istruzioni a costo unitario:
+        istruzioni di lettura/scrittura (cin/cout)
+        istruzioni di assegnamento, aritmetica predefinita, return  (x=3*7)
+        istruzioni di accesso ad elementi di un array   (v[0])
+        istruzioni di valutazione espressioni booleane  (a && b)
+
+
+NOTAZIONE ASINTOTICA
+n-> infinito    f(n)=2n+2
+                {    n lineare
+            g(n){    n^2 polinomiale
+                {    n log(n)
+                {    2^n
+
+NOTAZIONE O ("o" grande) (costo)
+f(n) contenuta in O(g(n)) se: esiste c,n_0>0 tale che per ogni n>n_0 0<=f(n)<=cg(n)
+
+
+BLOCCO DI ISTRUZIONI A COSTO UNITARIO   O(1)
+blocco1 }O(1)
+                O(1)+O(1)=O()
+blocco2 }O(1)
+
+if(cond)
+    {blocco if}              caso peggiore=f_cond+max{f_if,f_else}
+else
+    {blocco else}
+
+
+FUNZIONI: nelle funzioni i parametri passati con tipi standard o per riferimento(*) hanno costo costante
+mentre se li passo per valore devo fare la copia dei dati e costa di più
+
+void StampaStelle(int k){
+    for(int i=0;i<k;i++0)   k volte
+        cout<<"*";          O(1)            il tutto costa O(k)
+    
+    cout<<endl;
+}
+
+se ho delle cose che costano ALMENO 1, posso ignorare le istruzioni di costo 1

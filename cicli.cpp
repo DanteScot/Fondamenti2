@@ -20,6 +20,11 @@ int main(){
         cout<<i;
     }*/
 
+    /*for (int i: a1)    //foreach
+    {
+       cout<<i;
+    }*/
+
     /*int sum=0;
     while (cin>>x)
     {
