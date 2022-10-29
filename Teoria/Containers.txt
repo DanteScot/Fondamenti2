@@ -1,0 +1,6 @@
+CONTAINERS
+
+-Vector
+-list (forward list)
+-stack/queue/priority queue (adaptors)
+-unordered map/map  (associative containers)

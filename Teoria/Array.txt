@@ -1,0 +1,7 @@
+Array:
+    cons:
+        -indici fissati(0..dim)
+        -dim "reale"
+        -inserire in ultima pos
+    pros:
+        -accesso diretto(tramite indice)
