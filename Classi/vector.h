@@ -14,6 +14,7 @@ class Vector{
     public:
         Vector();/**/
         Vector(const Vector<R>&);/**/
+        Vector(const R v[],const int dim);
         ~Vector(); //alt+126, distruttore /**/
         int size() const {return sz;}/**/
         int capacity() const {return cap;}/**/
@@ -43,6 +44,15 @@ Vector<R>::Vector(const Vector& v){
     vec=new R[cap];
 
     for (int i = 0; i < sz; i++)    vec[i]=v.vec[i];
+}
+
+template<class R>
+Vector<R>::Vector(const R v[],const int dim){
+    sz=cap=dim;
+
+    vec=new R[cap];
+
+    for (int i = 0; i < sz; i++)    vec[i]=v[i];
 }
 
 template<class R>

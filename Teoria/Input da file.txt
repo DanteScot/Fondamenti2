@@ -1,0 +1,1 @@
+win type input.txt | programma.exe
