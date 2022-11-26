@@ -2,6 +2,8 @@
 //                      public/protected/private
 
 #include<vector>
+#include<iostream>
+using namespace std;
 
 class Poligono{//classe astratta perché ho una funzione virtuale pura => non posso definire oggetti di tipo poligono ma posso definire un puntatore a poligono
     protected:
@@ -9,17 +11,17 @@ class Poligono{//classe astratta perché ho una funzione virtuale pura => non po
     public:
         void set_values(int a,int b){base=a;altezza=b;}
         virtual int area() = 0; //in questo modo prevedo una funzione area ma non ne definisco il comportamento(funzione virtuale pura)
-}
+};
 
 class Rettangolo:public Poligono{   //public indica il massimo livello di visibilità dei dati ereditati es.protected=public->protected
     public:
         int area(){return base*altezza;}
-}
+};
 
 class Triangle:public Poligono{
     public:
         int area(){return (base*altezza)/2;}
-}
+};
 
 int main(){
     Rettangolo r;

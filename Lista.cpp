@@ -21,7 +21,7 @@ class List{
 
     public:
         List():first(nullptr),last(nullptr){}
-        ~list();/**/
+        ~List();/**/
         void push_front(const T&);/**/
         void push_back(const T&);
         bool pop_front(T& v);
@@ -48,7 +48,7 @@ List<T>::~List(){
     }
 }
 
-template<calss T>
+template<class T>
 void List<T>::push_front(const T& v){
     Node<T>* n=newNode(v);
     if(empty()) first=last=n;
